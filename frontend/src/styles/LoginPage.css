@@ -1,0 +1,118 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .login-animation {
+    flex: 1;
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .login-animation img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+  }
+  
+  .login-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .form-switch-container {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-switch {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .form-switch.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  .google-auth-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .google-auth-container p {
+    margin: 1rem 0;
+    color: #666;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .google-auth-container p::before,
+  .google-auth-container p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .google-auth-container p::before {
+    left: 0;
+  }
+  
+  .google-auth-container p::after {
+    right: 0;
+  }
+  
+  .text-button {
+    background: none;
+    border: none;
+    color: #3498db;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .text-button:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+    
+    .login-animation {
+      height: 30vh;
+    }
+    
+    .login-form-container {
+      height: 70vh;
+    }
+  }
+  
